@@ -10,4 +10,6 @@ def home():
 @app.post("/register")
 
 def register(user:dict):
-    return user
+    return {
+        "message":f"Welcome{user['name']}"
+        }
